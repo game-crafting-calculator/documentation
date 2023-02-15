@@ -22,6 +22,7 @@ CREATE TABLE IF NOT EXISTS recipes (
 CREATE TABLE IF NOT EXISTS needs (
     id_recipes SERIAL REFERENCES recipes(id),
     id_items SERIAL REFERENCES items(id),
+    quantity INT,
     PRIMARY KEY(id_recipes,id_items)
 );
 
