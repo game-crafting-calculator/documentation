@@ -1,0 +1,9 @@
+users: id[SERIAL], username, password, email, registration_date[DATE], last_connection[DATE]
+results, 11 recipes, 0N items
+items: id[SERIAL], name, image
+
+bookmarks, 0N users, 0N recipes
+recipes: id[SERIAL], per_craft[INT]
+needs, 1N recipes, 0N items
+
+
